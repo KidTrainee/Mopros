@@ -31,5 +31,5 @@ public abstract class BaseFragment extends LogcatFragment {
 
     }
 
-    public void onExtraResumed() {}
+    public void onShow() {}
 }

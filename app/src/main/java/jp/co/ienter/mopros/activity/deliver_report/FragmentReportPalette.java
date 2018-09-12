@@ -2,6 +2,8 @@ package jp.co.ienter.mopros.activity.deliver_report;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,10 +14,12 @@ import android.widget.LinearLayout;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import jp.co.ienter.mopros.R;
 import jp.co.ienter.mopros.activity.deliver_report.views.CustomizePaletteItem;
+import jp.co.ienter.mopros.adapter.SimpleDeliverAdapter;
 import jp.co.ienter.mopros.interfaces.IBasicApiCallback;
 import jp.co.ienter.mopros.models.MoprosDelivery;
 import jp.co.ienter.mopros.models.PaletteReportDataModel;
@@ -33,6 +37,9 @@ public class FragmentReportPalette extends FragmentDeliverReportChildBase
     private static final int MAX_VALUE = 100;
     public ArrayList<PaletteResultReport> listTotalPallet;
     private String dataTypes="0";
+
+    @BindView(R.id.deliver_rc)
+    RecyclerView mDeliverRc;
 
 //    @BindView(R.id.activity_report_palette_tv_store_name)
 //    TextView mStoreNameTV;
@@ -64,8 +71,20 @@ public class FragmentReportPalette extends FragmentDeliverReportChildBase
         return view;
     }
 
+    @Override
+    public void onShow() {
+        super.onShow();
+    }
+
     private void setupUI() {
         loadPaletteData("1");
+        setupDeliverList();
+    }
+
+    public void setupDeliverList() {
+        SimpleDeliverAdapter adapter = new SimpleDeliverAdapter(mSelectedDeliveryList, mContext);
+        mDeliverRc.setAdapter(adapter);
+        mDeliverRc.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
     }
 
     protected void loadPaletteData(String dataType){
@@ -132,8 +151,6 @@ public class FragmentReportPalette extends FragmentDeliverReportChildBase
         return adapter;
     }
 
-
-
     private void setupDeliverInfo() {
         checkNotNull(mDeliveryList);
         if (!mDeliveryList.isEmpty()) {
@@ -147,7 +164,6 @@ public class FragmentReportPalette extends FragmentDeliverReportChildBase
 //        PaletteResultReport objPallet =new PaletteResultReport("1","2","3","4","5");
 //        listTotalPallet.add(objPallet);
         mFragmentDeliverReport.setListPallet(listTotalPallet);
-
         mFragmentDeliverReport.gotoPreviousFragment();
     }
 

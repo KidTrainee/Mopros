@@ -5,12 +5,10 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import jp.co.ienter.mopros.R;
 import jp.co.ienter.mopros.activity.deliver_report.callbacks.ButtonCallbacks;
@@ -34,10 +32,11 @@ public class FragmentDeliverReport extends FragmentBaseDeliverReport
     private SimpleDeliverApi mSimpleDeliverApi;
 //    private ReportDataAPI mReportDataApi;
 
-    @BindView(R.id.fl_deliver_info_container)
-    FrameLayout deliverInfoContainer;
+//    @BindView(R.id.fl_deliver_info_container)
+//    FrameLayout deliverInfoContainer;
 //    private DeliverInfoDetailWhenDeliverFragment deliverInfoDetailFragment;
     private BaseFragment mExtraFragment;
+    private BaseFragment mChildFragment;
 
     public static FragmentDeliverReport newInstance() {
 
@@ -166,12 +165,14 @@ public class FragmentDeliverReport extends FragmentBaseDeliverReport
 
     public void gotoExtraExtraReport() {
         if (mExtraFragment != null) {
+            if (mChildFragment == null) {
+                mChildFragment = mSelectedDeliveryList.get(0).getData_type().equals(Const.FLAG_DESTINATION_TYPE_DELIVER)
+                        ? FragmentReportPalette.newInstance()
+                        : FragmentReportPickupItem.newInstance();
+            }
 
-            BaseFragment fragment = mSelectedDeliveryList.get(0).getData_type().equals(Const.FLAG_DESTINATION_TYPE_DELIVER)
-                    ? FragmentReportPalette.newInstance()
-                    : FragmentReportPickupItem.newInstance();
-
-            mScreenTransition.replaceChildFragment(R.id.fl_progress_container, fragment, mExtraFragment);
+            mScreenTransition.replaceChildFragment(R.id.fl_progress_container, mChildFragment, mExtraFragment);
+            mChildFragment.onShow();
         }
     }
 
@@ -180,7 +181,7 @@ public class FragmentDeliverReport extends FragmentBaseDeliverReport
 //    }
     public void gotoPreviousFragment() {
         mScreenTransition.replacePreviousFragment();
-        mExtraFragment.onExtraResumed();
+        mExtraFragment.onShow();
     }
 
     public void setListPallet(ArrayList<PaletteResultReport> listPallet) {

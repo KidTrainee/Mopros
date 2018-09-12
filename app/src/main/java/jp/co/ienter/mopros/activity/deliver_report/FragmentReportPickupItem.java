@@ -48,7 +48,11 @@ public class FragmentReportPickupItem extends FragmentReportPalette {
 
     private void setupUI() {
         loadPaletteData("2");
+        setupDeliverList();
     }
+
+    @Override
+    public void onShow() {}
 
     @Override
     protected  void onAddShukaData(String label){
