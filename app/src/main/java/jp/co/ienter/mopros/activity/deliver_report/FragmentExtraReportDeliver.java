@@ -96,9 +96,9 @@ public class FragmentExtraReportDeliver extends FragmentDeliverReportChildBase {
     }
 
     @Override
-    public void onExtraResumed() {
+    public void onShow() {
         mPaletteResultReport = mFragmentDeliverReport.getListPallet();
-        Log.d(TAG, "onExtraResumed");
+        Log.d(TAG, "onShow");
     }
 
     @Nullable
