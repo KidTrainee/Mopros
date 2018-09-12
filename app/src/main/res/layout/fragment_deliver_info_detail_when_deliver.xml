@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGreen"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_1">
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/lv_store_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_dash_round_grey_thin"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/total_deliver_format"
+            android:textColor="@color/colorBorder"
+            android:id="@+id/tv_total_deliver"/>
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/ll_1"-->
+        <!--android:text="@string/txt_deliver_report"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:textColor="@color/colorRed"/>-->
+
+</RelativeLayout>

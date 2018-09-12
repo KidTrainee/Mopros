@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_parrent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.alexvasilkov.gestures.views.GestureImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_content"/>
+
+    <TextView
+        android:layout_width="@dimen/item_row_line_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/column_left"
+        android:background="@color/table_colurm_color"></TextView>
+
+
+    <TextView
+        android:background="@color/table_colurm_color"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/item_row_line_height"
+        android:layout_height="match_parent" />
+</RelativeLayout>

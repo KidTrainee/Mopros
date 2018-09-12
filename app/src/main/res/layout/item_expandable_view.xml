@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jp.ienter.expandableview.ExpandableView android:id="@+id/fragment_basic_info_ev"
+    expandableview:button_drawable="@drawable/button_collapsible_toggle_bg"
+    expandableview:title_text="abc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:expandableview="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context="jp.co.ienter.mopros.activity.WorkTimeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/colorHeagerBg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextFontStyleHeader"
+                android:text="@string/txt_report_download_header"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:background="@drawable/custom_button_radio"
+                android:layoutDirection="rtl"
+                android:id="@+id/radioGroup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:divider="#000000">
+
+                <!--<RadioButton-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:buttonTint="@color/colorBlack"-->
+                    <!--android:textAlignment="textEnd"-->
+                    <!--android:layout_gravity="end"-->
+                    <!--android:id="@+id/radio1"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/custom_button_radio"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="30"-->
+                    <!--android:textSize="30sp" />-->
+
+                <!--<RadioButton-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:buttonTint="@color/colorBlack"-->
+                    <!--android:textAlignment="textEnd"-->
+                    <!--android:layout_gravity="end"-->
+                    <!--android:id="@+id/radio2"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/custom_button_radio"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="45"-->
+                    <!--android:textSize="30sp" />-->
+
+                <!--<RadioButton-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:buttonTint="@color/colorBlack"-->
+                    <!--android:textAlignment="textEnd"-->
+                    <!--android:layout_gravity="end"-->
+                    <!--android:id="@+id/radio3"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/custom_button_radio"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="60"-->
+                    <!--android:textSize="30sp" />-->
+                <!--<RadioButton-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:buttonTint="@color/colorBlack"-->
+                    <!--android:textAlignment="textEnd"-->
+                    <!--android:layout_gravity="end"-->
+                    <!--android:id="@+id/radio4"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/custom_button_radio"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="90"-->
+                    <!--android:textSize="30sp" />-->
+
+                <!--<RadioButton-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:buttonTint="@color/colorBlack"-->
+                    <!--android:textAlignment="textEnd"-->
+                    <!--android:layout_gravity="end"-->
+                    <!--android:id="@+id/radio5"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/custom_button_radio"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="120"-->
+                    <!--android:textSize="30sp" />-->
+
+                <!--<RadioButton-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:buttonTint="@color/colorBlack"-->
+                    <!--android:id="@+id/radio6"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/custom_button_radio"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="120以上"-->
+                    <!--android:textSize="30sp" />-->
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <include layout="@layout/mainmenu_message_button" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

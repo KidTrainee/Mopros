@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/spinner_1_width"
+    android:layout_height="@dimen/spinner_1_height">
+
+    <Spinner
+        android:id="@+id/layout_compound_spinner_sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_spinner_1"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/layout_compound_spinner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/spinner_1_dropdown_btn_width"
+        android:layout_marginRight="@dimen/spinner_1_dropdown_btn_width" />
+
+</RelativeLayout>

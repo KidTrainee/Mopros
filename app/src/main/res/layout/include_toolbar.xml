@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="50dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorHeagerBg">
+
+    <TextView android:layout_height="match_parent"
+        style="@style/TextFontStyleHeader"
+        android:layout_width="match_parent"
+        android:id="@+id/include_toolbar_tv_header"
+        android:gravity="center"
+        android:text="@string/txt_report_download_header"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:src="@drawable/ic_chart"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/include_toolbar_iv_icon"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+</RelativeLayout>

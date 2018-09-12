@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">@color/colorBorderTable</color>
+    <color name="colorBG">#f2f2f2</color>
+    <color name="colorButtonBg">#f2dcdb</color>
+    <color name="colorHeagerBg">#558ed5</color>
+    <color name="colorButtonMainMenu">#1f497d</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorYellow">#ffffcc</color>
+    <color name="colorYellowNormal">#cece66</color>
+    <color name="colorYellowDark">#a6a612</color>
+    <color name="colorRed">#ff2e51</color>
+    <color name="colorBorder">#B1B3AF</color>
+    <color name="colorBorderTable">#0F0F0F</color>
+    <color name="colorBgTable">#e3e5e7</color>
+    <color name="colorRedBrown">#8a3c3a</color>
+    <color name="colorLightBlue">#e8f4fc</color>
+    <color name="colorLightYellow">#fffdd1</color>
+
+    <!-- activity deliver chart -->
+    <color name="table_row_key_bg_color">#f2dcdb</color>
+    <color name="table_text_color">#000000</color>
+    <color name="table_row_value_bg_color">#FFFFFF</color>
+    <color name="table_colurm_color">#000000</color>
+    <color name="colorGreen">#a3f795</color>
+    <color name="colorOrange">#ceaa66</color>
+</resources>

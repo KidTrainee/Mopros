@@ -1,0 +1,8 @@
+<Button
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_weight="1"
+style="@style/ButtonFontStyle"
+    android:textSize="17sp"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:background="@drawable/my_button" />

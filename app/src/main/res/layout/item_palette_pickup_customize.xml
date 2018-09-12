@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout_parent">
+
+    <TextView
+        android:id="@+id/tv_label_pallet_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_up_1"
+        android:layout_margin="4dp"/>
+
+    <EditText
+        android:id="@+id/edt_palette_pickup"
+        style="@style/AppWidget.PickupReportEdt"/>
+
+</LinearLayout>

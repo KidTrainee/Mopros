@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorHeagerBg">
+
+    <Button
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/btnMainMenu"
+        style="@style/ButtonFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/my_button_mainmenu"
+        android:text="@string/txt_mainmenu_header"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/btnMsg"
+        style="@style/ButtonFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/my_button_mainmenu"
+        android:text="@string/txt_msg_header"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>
+

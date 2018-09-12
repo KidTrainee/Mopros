@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/deliver_rc"/>
+
+    <TextView
+        android:id="@+id/fragment_deliver_info_detail_tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/border_dash_round_grey_thick"
+        android:gravity="center"
+        android:padding="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorBorder" />
+
+    <Button
+        style="@style/AppWidget.Button"
+        android:id="@+id/btn_departure"
+        android:text="@string/btn_departure" />
+
+    <Button
+        style="@style/AppWidget.Button"
+        android:id="@+id/btn_correction"
+        android:text="@string/btn_correction" />
+
+</LinearLayout>
+

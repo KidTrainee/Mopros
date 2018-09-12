@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/layout_parrent"
+    android:padding="@dimen/padding_spinner_with_label"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tv_label_spinner"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:background="@drawable/bg_spinner_customize"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!--<Spinner-->
+    <!--android:id="@+id/activity_extra_deliver_report_sp_extra_1"-->
+    <!--style="@style/AppWidget.CompoundSpinner"-->
+    <!--android:entries="@array/shelf_selection_array" />-->
+
+
+</LinearLayout>

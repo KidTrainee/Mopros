@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical|right"
+        android:drawable="@drawable/bg_white_border_primary"/>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/ic_caret_down" />
+    </item>
+</layer-list>

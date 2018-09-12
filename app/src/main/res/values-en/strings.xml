@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoPros</string>
+    <!--Login-->
+    <string name="txt_id">ID</string>
+    <string name="txt_password">PASS</string>
+    <string name="btn_login">Login</string>
+    <!--Main menu-->
+    <string name="txt_mainmenu_header">MainMenu</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_sort">Sorting</string>
+    <string name="btn_report_download">Loading Report</string>
+    <string name="btn_report_work">Delivery work report</string>
+    <string name="btn_status">Status</string>
+    <string name="btn_out_office">Report on leaving time</string>
+    <string name="txt_note1">※ It is convenient to sort in order of delivery</string>
+    <string name="txt_note2">Report: %1$s</string>
+    <string name="txt_note3">Delivery progress: %1$s/%2$s</string>
+
+    <string name="txt_sort_header">Sort by display order</string>
+    <string name="txt_report_download_header">Loading work report</string>
+    <string name="txt_report_work_header">Delivery work report</string>
+    <string name="txt_status_header">Refer to shipping status</string>
+    <string name="txt_out_office_header">Report on leaving time</string>
+
+    <string name="btn_sort_complete">Done</string>
+    <string name="btn_sort_no_transport">Delivery</string>
+    <string name="btn_sort_ignore_no_transport">No delivery</string>
+    <string name="btn_start_load">Start loading work</string>
+    <string name="btn_start_load_complete">Finish loading work</string>
+    <string name="btn_report">report</string>
+    <string name="btn_noreport">no report</string>
+    <string name="btn_deliveryplace">Delivery destination</string>
+    <string name="btn_load_supplier_report_decice">Destination applicable decision</string>
+
+    <string name="btn_break">Break</string>
+    <string name="btn_daily_report_return">return</string>
+    <string name="txt_office_header" />
+    <string name="btn_report_in">Attendance report</string>
+    <string name="btn_report_out">Leave Office report</string>
+    <string name="txt_in_office">Attendance</string>
+    <string name="txt_out_office">Leave Office work</string>
+    <string name="txt_msg_header">Message</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_ng">NG</string>
+    <string name="btnNextMes"> <u>next&gt;</u></string>
+    <string name="btnBackMes"> <u>&lt;back</u></string>
+    <string name="txt_message">It is an unconfirmed message</string>
+    <string name="btn_daily_report_decide">Decision</string>
+    <!--Status-->
+    <string name="btn_status_ok">OK</string>
+
+    <string name="txt_delivery_date">Delivery Date</string>
+    <string name="txt_choose_destination">Choose Destination</string>
+
+    <string name="btn_departure">Departure</string>
+    <string name="btn_correction">Correction</string>
+    <string name="btn_arrival">Arrival</string>
+    <string name="btn_pending">Pending (Destination Selection)</string>
+
+    <string name="btn_deliver_start">Delivery start</string>
+    <string name="waiting_start">Bắt đầu waiting</string>
+    <string name="btn_deliver_complete">Deliver Complete</string>
+    <string name="txt_extra_deliver_report">Extra work report</string>
+
+    <string name="txt_time_deliver">Delivery work time was %s minutes.</string>
+    <string name="report_extra_work_at_time_delivery">Please report incidental work at the time of delivery.</string>
+
+    <string name="txt_shelf">Shelf</string>
+    <string name="txt_forklift">FolkLift</string>
+    <string name="txt_band_bara">Band/Bara</string>
+
+    <string name="txt_millefeuille">Millefeuille</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_use_coin_p">Use Coin P</string>
+
+    <string name="btn_report_palette">Palette Report</string>
+    <string name="btn_no_report">No Report</string>
+    <string name="btn_decision">Decision</string>
+
+    <string name="txt_deliver_report">Deliver Report</string>
+    <string name="company_palette">Company Palette</string>
+    <string name="sp_delivery">Deliver</string>
+    <string name="sp_recovery">Recover</string>
+    <string name="rental_palette">Rental Palette</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_finish">Finish</string>
+    <string name="txt_destination_chart">Delivery destination Chart</string>
+    <string name="basic_info">Basic information</string>
+    <string name="surrounding_map">Surrounding map</string>
+    <string name="at_normal_temperature">At normal temperature</string>
+    <string name="frozen_chilled">Frozen chilled</string>
+    <string name="special_work">Special Work</string>
+    <string name="txt_pick_up_date">Pick-up Date:</string>
+    <string name="txt_deliver_report_header">Deliver Report</string>
+    <string name="txt_work_time">WorkTime</string>
+    <string name="txt_designation">Designation %s</string>
+    <string name="txt_weight_format">%d kg</string>
+    <string name="txt_cs_format">%s Cs</string>
+    <string name="txt_error_loading_data">Error Loading Data</string>
+    <string name="pickup_store_name_format">[Pick] %s</string>
+    <string name="deliver_store_name_format">[Ship] %s</string>
+    <string name="total_deliver_format">%d are specified</string>
+    <string name="btn_pick_up_start">Pickup Start</string>
+    <string name="btn_pick_up_finish">Pickup Finish</string>
+    <string name="txt_pick_up_report">Pickup Report</string>
+    <string name="pick_up_1">Pickup 1</string>
+    <string name="pick_up_2">集荷2</string>
+    <string name="thank_you_for_hard_working">お疲れ様でした。</string>
+
+    <!-- table basic info-->
+    <string name="shop_type">店タイプ</string>
+    <string name="nohin_kind">納品方法</string>
+    <string name="enter_kind">入場管理</string>
+    <string name="sejo_kasho">鍵施錠箇所</string>
+    <string name="niuke_kigen">荷受限界時間</string>
+    <string name="sharyo_kisei">車両規制</string>
+    <string name="security_system">警備システム</string>
+    <string name="security_system_no">なし</string>
+    <string name="security_system_yes">ありの表記</string>
+
+    <!-- table work generate -->
+    <string name="table_work_generate_title">納品時付帯作業の有無</string>
+    <string name="table_work_generate_item_nohinwaitkbn">慢性的な待機時間</string>
+    <string name="table_work_generate_item_nohinshiteikbn">納品時間指定</string>
+    <string name="table_work_generate_item_plshiteikbn">ミルフィーユ指定</string>
+    <string name="table_work_generate_item_tanasagyokbn">棚入れ、先出先入、しまい込み</string>
+    <string name="table_work_generate_item_liftsagyokbn">納品先でのフォーク作業</string>
+    <string name="table_work_generate_item_bandsagyokbn">バンド切り、バラし作業</string>
+    <string name="table_work_generate_item_coinparkkbn">コインパークの使用</string>
+
+    <!-- table deliver position -->
+    <string name="table_deliver_position_title">納品手順</string>
+    <!-- table important note -->
+    <string name="table_deliver_important_note_title">特別条件/重点注意事項</string>
+    <!-- table deliver position map -->
+    <string name="table_deliver_position_map_title">納品手順図</string>
+    <string name="table_deliver_position_map_key_position_map">手順図</string>
+    <!-- table deliver inner design map -->
+    <string name="table_deliver_inner_design_map_title">構内図</string>
+    <!-- activtiy DeliveryChartActivity -->
+    <string name="delivery_chart_lable_adress">納品先住所 :</string>
+    <string name="delivery_chart_lable_zip">納品先郵便番号 :</string>
+    <string name="btn_report_quantity">Report Pickup Item</string>
+</resources>
+

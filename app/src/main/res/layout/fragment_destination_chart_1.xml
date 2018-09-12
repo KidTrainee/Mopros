@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/activity_destination_chart_tabLayout"
+            android:layout_width="match_parent"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorLightBlue"
+            app:tabBackground="@drawable/bg_tab_layout"
+            app:tabIndicatorHeight="0dp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/activity_destination_chart_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_light_yellow_border_primary"/>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

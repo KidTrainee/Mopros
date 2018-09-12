@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_two_buttons_extra_view"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_two_buttons_tv_error"
+        android:visibility="gone"
+        android:textColor="@color/colorRed"
+        android:padding="8dp"/>
+
+    <Button
+        style="@style/AppWidget.Button"
+        android:id="@+id/fragment_two_buttons_btn_one"
+        android:text="@string/btn_departure" />
+
+    <Button
+        style="@style/AppWidget.Button"
+        android:id="@+id/fragment_two_buttons_btn_two"
+        android:text="@string/btn_correction" />
+</LinearLayout>

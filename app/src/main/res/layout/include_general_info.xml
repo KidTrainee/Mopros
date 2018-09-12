@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_screen_edge"
+    android:layout_marginStart="@dimen/margin_screen_edge"
+    android:layout_marginEnd="@dimen/margin_screen_edge"
+    android:orientation="vertical"
+    android:stretchColumns="3">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/include_general_info_tv_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="@string/txt_delivery_date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text=": "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/include_general_info_tv_delivery_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/txt_id" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/include_general_info_tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:textSize="16sp"/>
+    </TableRow>
+</TableLayout>

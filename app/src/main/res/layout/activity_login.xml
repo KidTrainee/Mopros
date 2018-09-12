@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context="jp.co.ienter.mopros.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/txt_id"
+                />
+
+            <EditText
+                android:id="@+id/editID"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="text|textNoSuggestions"
+                android:imeOptions="actionNext|flagForceAscii"
+                android:background="@drawable/my_edittext"
+                android:layout_marginBottom="50dp"/>
+            <!--android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ !@#$%^*?"-->
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/txt_password"
+                />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword|textNoSuggestions"
+                android:imeOptions="actionNext|flagForceAscii"
+                android:background="@drawable/my_edittext"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/my_button"
+            style="@style/ButtonFontStyle"
+            android:text="@string/btn_login"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

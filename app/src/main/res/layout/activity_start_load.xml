@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context="jp.co.ienter.mopros.activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/colorHeagerBg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextFontStyleHeader"
+                android:text="@string/txt_report_download_header"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/include_general_info"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnStartLoad"
+                android:layout_marginBottom="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/my_button"
+                style="@style/ButtonFontStyle"
+                android:text="@string/btn_start_load"/>
+        </LinearLayout>
+
+        <include layout="@layout/mainmenu_message_button"/>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

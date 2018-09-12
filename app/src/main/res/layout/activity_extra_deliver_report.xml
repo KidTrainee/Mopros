@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliver_rc"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1">
+
+            <!--<FrameLayout-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:id="@+id/activity_extra_deliver_report_fl_general_info"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <TextView
+                android:id="@+id/txt_extra_deliver_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_extra_deliver_report"
+                android:textColor="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/activity_extra_deliver_report_tv_time_deliver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_extra_deliver_report"
+                android:text="@string/txt_time_deliver" />
+
+            <TextView
+                android:id="@+id/tv_report_extra_work_at_time_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_extra_deliver_report_tv_time_deliver"
+                android:text="@string/report_extra_work_at_time_delivery" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_report_extra_work_at_time_delivery">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp">
+
+            <View
+                android:id="@+id/center_horizontal_alignment"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:id="@+id/btn_report_extra"
+                style="@style/ButtonFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/center_horizontal_alignment"
+                android:layout_toRightOf="@+id/center_horizontal_alignment"
+                android:background="@drawable/button_bg" />
+
+            <Button
+                android:id="@+id/activity_extra_deliver_report_btn_decision"
+                style="@style/ButtonFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btn_report_extra"
+                android:layout_toEndOf="@+id/center_horizontal_alignment"
+                android:layout_toRightOf="@+id/center_horizontal_alignment"
+                android:background="@drawable/button_bg"
+                android:text="@string/btn_decision" />
+
+            <Button
+                android:id="@+id/activity_extra_deliver_report_btn_no_report"
+                style="@style/ButtonFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/btn_report_extra"
+                android:layout_toLeftOf="@+id/center_horizontal_alignment"
+                android:layout_toStartOf="@+id/center_horizontal_alignment"
+                android:background="@drawable/button_bg"
+                android:text="@string/btn_no_report" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context="jp.co.ienter.mopros.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorHeagerBg"
+            android:gravity="center">
+
+            <TextView
+                style="@style/TextFontStyleHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_report_download_header" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <include
+                android:id="@+id/general_info"
+                layout="@layout/include_general_info" />
+
+            <LinearLayout
+                android:id="@+id/layout_texttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/general_info"
+                android:layout_marginLeft="@dimen/margin_screen_edge"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_list_time1" />
+
+                <TextView
+                    android:id="@+id/tvTextTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/colorRed" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/txt_list_time2"-->
+                    <!--android:textColor="@color/colorRed" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_list_time3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_texttime"
+                android:layout_marginLeft="@dimen/margin_screen_edge"
+                android:layout_marginTop="10dp"
+                android:text="@string/txt_list_time4" />
+
+            <!--<jp.co.ienter.mopros.utils.CustomSpinner-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:id="@+id/btnWorkTime"-->
+                <!--style="@style/AppWidget.CompoundSpinner" />-->
+            <ScrollView
+                android:layout_marginLeft="@dimen/margin_screen_edge"
+                android:layout_marginRight="@dimen/margin_screen_edge"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_above="@+id/btnNoReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnReport"
+                    style="@style/ButtonFontStyle"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:text="@string/btn_report" />
+
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnDeliveryPlace"
+                    style="@style/ButtonFontStyle"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:text="@string/btn_deliveryplace" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnNoReport"
+                style="@style/ButtonFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/my_button"
+                android:text="@string/btn_noreport" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/mainmenu_message_button" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

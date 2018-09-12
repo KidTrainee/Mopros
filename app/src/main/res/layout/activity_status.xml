@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context="jp.co.ienter.mopros.activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/colorHeagerBg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextFontStyleHeader"
+                android:text="@string/txt_status_header"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_general_info"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_screen_edge"
+                    android:layout_marginEnd="@dimen/margin_screen_edge"
+                    android:textSize="16sp"
+                    android:text="進捗 :"/>
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_marginStart="@dimen/margin_screen_edge"
+                    android:layout_marginEnd="@dimen/margin_screen_edge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TableLayout
+                android:id="@+id/tblStatus"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="match_parent"
+                android:padding="0dp"
+                android:stretchColumns="*">
+
+                <TextView android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorBorderTable"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorButtonMainMenu">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorButtonMainMenu"
+                        android:gravity="center">
+
+                    <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/colorBorderTable"/>
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:gravity="center_horizontal"
+                        android:text="名称"
+                        android:textColor="#FFF" />
+
+                    <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/colorBorderTable"/>
+
+                    <TextView
+                        android:id="@+id/age"
+                        android:textColor="#FFF"
+                        android:fontFamily="serif"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:text="指定"/>
+
+                    <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/colorBorderTable"/>
+
+                    <TextView
+                        android:textColor="#FFF"
+                        android:id="@+id/position"
+                        android:fontFamily="serif"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="到着"/>
+
+                    <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/colorBorderTable"/>
+
+                    <TextView
+                        android:textColor="#FFF"
+                        android:id="@+id/address"
+                        android:fontFamily="serif"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="完・未"/>
+
+                    <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/colorBorderTable"/>
+
+                    <TextView
+                        android:textColor="#FFF"
+                        android:id="@+id/ok"
+                        android:fontFamily="serif"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="作業報告"/>
+
+                    <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/colorBorderTable"/>
+
+                    </LinearLayout>
+
+                </TableRow>
+                <TextView android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorBorderTable"/>
+
+                <ScrollView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    style="@style/AppWidget.ScrollViewStyle"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:id="@+id/lblRowsData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnStatusOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_button"
+                style="@style/ButtonFontStyle"
+                android:text="@string/btn_status_ok"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/mainmenu_nobutton"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context="jp.co.ienter.mopros.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@color/colorHeagerBg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextFontStyleHeader"
+                android:text="@string/txt_sort_header"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/include_general_info"
+            android:layout_marginStart="@dimen/margin_screen_edge"
+            android:layout_marginEnd="@dimen/margin_screen_edge"
+            android:layout_margin="@dimen/margin_screen_edge"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/recycler_view_background"
+                android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        style="@style/AppWidget.ScrollViewStyle"
+                        android:scrollbars="vertical"
+                        android:id="@+id/rcPickUp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnCollectionSelect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/my_button"
+                        style="@style/ButtonFontStyle"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/btn_sort_select"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <include layout="@layout/mainmenu_nobutton"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

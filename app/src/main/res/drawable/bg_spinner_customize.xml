@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <size android:width="@dimen/spinner_2_text_view_width"/>
+    </shape>
+</item>
+<item android:drawable="@drawable/bg_light_yellow_round_border_primary"/>
+<item android:gravity="right" android:left="@dimen/spinner_2_text_view_width">
+    <layer-list>
+        <item android:id="@+id/bg_spinner_1_spinner_dropdown_btn">
+            <shape>
+                <size android:width="@dimen/spinner_1_dropdown_btn_width"/>
+            </shape>
+        </item>
+        <item android:drawable="@drawable/bg_dropdown_button"/>
+    </layer-list>
+</item>
+</layer-list>

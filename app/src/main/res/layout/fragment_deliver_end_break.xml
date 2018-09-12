@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_header"/>
+
+    <!--<include layout="@layout/include_general_info" />-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fl_general_info"/>
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_progress_container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <Button
+        style="@style/AppWidget.Button"
+        android:id="@+id/fragment_break_btn_end_break"
+        android:text="@string/btn_finish" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_footer"/>
+</LinearLayout>

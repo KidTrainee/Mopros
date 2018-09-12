@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardview_radius">16dp</dimen>
+    <dimen name="dash_size_thin">4dp</dimen>
+    <dimen name="dash_size_thick">8dp</dimen>
+    <dimen name="cardview_radius_8">8dp</dimen>
+
+    <!--spinner style dimens-->
+    <dimen name="spinner_1_width">300dp</dimen>
+    <dimen name="spinner_1_height">40dp</dimen>
+    <dimen name="spinner_1_dropdown_btn_width">45dp</dimen>
+    <dimen name="spinner_1_btn_margin_left">255dp</dimen>
+
+    <dimen name="spinner_2_width">140dp</dimen>
+    <dimen name="spinner_2_height">40dp</dimen>
+    <dimen name="spinner_2_dropdown_btn_width">38dp</dimen>
+    <dimen name="spinner_2_btn_margin_left">99dp</dimen>
+    <dimen name="spinner_2_text_view_width">99dp</dimen>
+    <!---->
+
+    <dimen name="my_button_width">270dp</dimen>
+    <dimen name="margin_screen_edge">16dp</dimen>
+    <dimen name="min_selectable_item_height">50dp</dimen>
+
+    <!--item expandrecyclerview-->
+    <dimen name="item_header_expand_padding">5dp</dimen>
+    <dimen name="item_content_expand_padding_left">20dp</dimen>
+    <dimen name="item_content_expand_padding_top">5dp</dimen>
+    <dimen name="item_content_expand_padding_botton">5dp</dimen>
+    <dimen name="item_content_expand_padding_right">5dp</dimen>
+
+    <!-- fragment basic info -->
+    <dimen name="padding_left_right_screen">5dp</dimen>
+    <dimen name="padding_top_bot_screen">10dp</dimen>
+    <dimen name="item_row_line_height">1dp</dimen>
+    <dimen name="table_content_padding_top">5dp</dimen>
+    <dimen name="table_content_padding_bottom">5dp</dimen>
+    <dimen name="table_content_padding_left">10dp</dimen>
+    <dimen name="table_content_padding_right">10dp</dimen>
+
+    <!-- customize spinner with label -->
+    <dimen name="padding_spinner_with_label">4dp</dimen>
+
+</resources>

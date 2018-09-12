@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <jp.ienter.expandableview.expandable_layout.ExpandableLinearLayout
+        android:layout_below="@id/expandable_view_title"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/expandable_linear_layout"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fl_fragment_container"/>
+
+    </jp.ienter.expandableview.expandable_layout.ExpandableLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expandable_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite">
+
+        <Button
+            android:id="@+id/btn_toggle_view"
+            style="@style/CustomWidget.ButtonCollapsible"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

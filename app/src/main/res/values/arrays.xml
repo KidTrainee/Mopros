@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_array">
+        <item>10</item>
+        <item>15</item>
+        <item>18</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="shelf_selection_array" >
+        <item>Shelf 01</item>
+        <item>Shelf 02</item>
+        <item>Shelf 03</item>
+        <item>Shelf 04</item>
+    </string-array>
+    <string-array name="folk_lift_selection_array">
+        <item>Folk Lift 01</item>
+        <item>Folk Lift 02</item>
+        <item>Folk Lift 03</item>
+        <item>Folk Lift 04</item>
+    </string-array>
+    <string-array name="band_bara_selection_array">
+        <item>band/bara 01</item>
+        <item>band/bara 02</item>
+        <item>band/bara 03</item>
+        <item>band/bara 04</item>
+    </string-array>
+</resources>
